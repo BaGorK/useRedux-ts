@@ -4,3 +4,5 @@ import { cartSlice } from './cart-slice';
 export const store = configureStore({
   reducer: cartSlice.reducer,
 });
+
+export type AppDispatch = typeof store.dispatch;
